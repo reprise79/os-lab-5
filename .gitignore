@@ -1,0 +1,11 @@
+build/
+.vscode/
+*.exe
+*.out
+*.o
+*.obj
+
+*.log
+*.txt
+!CMakeLists.txt
+*.tmp
