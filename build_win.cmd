@@ -8,5 +8,5 @@ cmake -G "MinGW Makefiles" ..
 cmake --build .
 
 start "simulator" simulator.exe COM5
-start "udp_sender" udp_sender.exe COM6
+start "udp_sender" sender.exe COM6
 pause

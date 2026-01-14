@@ -3,7 +3,13 @@ project(Lab5_part1)
 
 add_executable(simulator simulator.c)
 add_executable(sender udp_sender.c)
-
+add_executable(server server.cpp sqlite3.c)
 if(WIN32)
     target_link_libraries(sender ws2_32)
+endif()
+
+if(WIN32)
+    target_link_libraries(server ws2_32)
+else()
+    target_link_libraries(server dl pthread)
 endif()
